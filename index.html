@@ -6,12 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git everyday push</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 30px;
+            color: #222;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 80%;
+            margin-bottom: 30px;
+            background: #fff;
+        }
+        th {
+            background: #3498db;
+            color: #fff;
+        }
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid #bbb;
             border-collapse: collapse;
         }
         th, td {
-            padding: 10px;
+            padding: 12px 18px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        button {
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #219150;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            width: 350px;
+            margin-bottom: 30px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"] {
+            width: 90%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        input[type="submit"]:hover {
+            background: #1c5a85;
         }
     </style>
 </head>
@@ -43,38 +111,41 @@
             <td>priyanshu</td>
             <td>gupta</td>
             <td>20</td>
-            <p>now i want to write this and and make a button </p><br>
-            <button>click me</button><br>
-            <h1>lets practise form now </h1>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <input type="submit" value="Submit">
-                <h2>New Table Example</h2>
-                <table>
-                    <tr>
-                        <th>Country</th>
-                        <th>Capital</th>
-                        <th>Population (Millions)</th>
-                    </tr>
-                    <tr>
-                        <td>India</td>
-                        <td>New Delhi</td>
-                        <td>1400</td>
-                    </tr>
-                    <tr>
-                        <td>USA</td>
-                        <td>Washington D.C.</td>
-                        <td>331</td>
-                    </tr>
-                    <tr>
-                        <td>Japan</td>
-                        <td>Tokyo</td>
-                        <td>126</td>
-                    </tr>
-                </table>
+        </tr>
+    </table>
+    <p>now i want to write this and and make a button </p><br>
+    <button>click me</button><br>
+    <h1>lets practise form now </h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>New Table Example</h2>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Population (Millions)</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td>1400</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>Washington D.C.</td>
+            <td>331</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>Tokyo</td>
+            <td>126</td>
+        </tr>
+    </table>
 </body>
 
 </html>
